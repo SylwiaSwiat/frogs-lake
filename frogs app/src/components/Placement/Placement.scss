@@ -1,0 +1,42 @@
+@use "../../variables.scss" as *;
+
+.placement {
+    position: relative;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 8px;
+    background-color: $light-blue;
+    border: 2px solid $lake-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.occupied {
+      cursor: pointer;
+      border: 2px solid $bright-green;
+      background: $frog-green;
+      
+      &.active {
+            cursor: pointer;
+            scale: 1.15;
+          }
+    }
+
+    &.inRange:hover,
+    &:focus,
+    &.chosen {
+      cursor: pointer;
+      border: 2px solid $bright-yellow;
+    }
+  }
+
+  @media all and (min-width: 768px) {
+    .placement {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }

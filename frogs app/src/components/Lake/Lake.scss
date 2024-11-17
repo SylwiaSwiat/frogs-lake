@@ -1,0 +1,17 @@
+.lakeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .lakeGrid {
+    display: grid;
+    grid-template-columns: repeat(10, 1.25rem);
+    grid-gap: .5rem;
+  }
+  
+  @media all and (min-width: 768px) {
+    .lakeGrid {
+      grid-template-columns: repeat(10, 2.5rem);
+    }
+  }

@@ -1,0 +1,26 @@
+@use "../../variables.scss" as *;
+
+button {
+    text-transform: capitalize;
+    padding: .5rem;
+    margin: .5rem .5rem 1rem;
+    background-color: $bright-orange;
+    border: 1px solid $light-orange;
+    border-radius: 8px;
+    color: $light-text;
+    font-weight: bold;
+    cursor: pointer;
+
+    &.disabled {
+        pointer-events: none;
+        cursor: auto;
+        background-color: $disabled-button;
+    }
+}
+
+@media all and (min-width: 768px) {
+    button {
+        padding: 1rem;
+        margin: 1rem 1rem 2rem;
+    }
+  }

@@ -1,0 +1,21 @@
+@use "../../variables.scss" as *;
+
+.genderBox {
+    width: .5rem;
+    height: .5rem;
+
+    &.male {
+        background-color: $male-color;
+    }
+
+    &.female {
+        background-color: $female-color;
+    }
+  }
+
+  @media all and (min-width: 768px) {
+    .genderBox {
+      width: .75rem;
+      height: .75rem;
+    }
+  }
